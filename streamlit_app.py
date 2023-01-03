@@ -36,7 +36,7 @@ my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("use warehouse pc_rivery_wh")
 my_cur.execute("SELECT * from fruit_load_list")
-my_data_rows = my_cur.fectchone()
+my_data = my_cur.fetchall()
 streamlit.text("List:")
 streamlit.text(my_data_rows)
 
