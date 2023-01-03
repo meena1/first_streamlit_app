@@ -38,7 +38,7 @@ my_cur.execute("use warehouse pc_rivery_wh")
 my_cur.execute("SELECT * from fruit_load_list")
 my_data = my_cur.fetchall()
 streamlit.text("List:")
-streamlit.text(my_data_rows)
+streamlit.text(my_data)
 
 fruit_choice = streamlit.text_input('What fruit would you like to add- ?')
 streamlit.write('The user entered ', fruit_choice)
