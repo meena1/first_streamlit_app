@@ -40,8 +40,8 @@ my_data = my_cur.fetchall()
 streamlit.text("List:")
 streamlit.dataframe(my_data)
 
-fruit_choice = streamlit.text_input('What fruit would you like to add- ?')
+fruit_choice_1 = streamlit.text_input('What fruit would you like to add- ?')
 
-add_my_fruit = my_cur.execute("insert into fruit_load_list values("+fruit_choice+")")
+add_my_fruit = my_cur.execute("insert into fruit_load_list values("+fruit_choice_1+")")
 
-streamlit.write('Thanks for adding ', fruit_choice)
+streamlit.write('Thanks for adding ', fruit_choice_1)
