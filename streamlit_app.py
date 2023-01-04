@@ -40,8 +40,6 @@ except URLerror as e:
   streamlit.error()
   
 streamlit.stop()
-  
-#streamlit.text(fruityvice_response.json())
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
